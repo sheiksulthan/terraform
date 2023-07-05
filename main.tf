@@ -3,7 +3,7 @@ provider "aws" {
   region  = var.region
 }
 
-resource "aws_security_group" "webserver" {
+resource "aws_security_group" "test" {
   name        = "myapp"
   description = "To host Tomcat"
   vpc_id      = var.vpc_id
@@ -32,7 +32,7 @@ resource "aws_security_group" "webserver" {
   }
 }
 
-resource "aws_instance" "testapp" {
+resource "aws_instance" "test" {
   ami           = var.ami
   instance_type = var.ec2_type
   key_name = var.ssh_key
