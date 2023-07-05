@@ -6,23 +6,23 @@ variable "region" {
 variable "ssh_key" {
   type        = string
   description = "ssh key"
-  default = "key-0825d3667ec688e9c"
+  default = "controller"
   
 }
 variable "ami" {
   type        = string
-  description = "ami-000a54989336780b5"
+  description = "ami"
   default = "ami-000a54989336780b5"
 }
 variable "name" {
   type        = string
   description = "EC2 Name."
-  default = "testwebapp"
+  default = "test"
 }
 variable "ec2_type" {
   type        = string
   description = "EC2 Instance Type"
-  default = "t2.micro"
+  default = "t4g.small"
 }
 variable "vpc_id" {
   type        = string
